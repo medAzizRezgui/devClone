@@ -68,36 +68,3 @@
          border: 1.5px solid rgb(95, 9, 134);
      }
  }
-
- .user__comment {
-     display: flex;
-     align-items: flex-start;
-     gap: 10px;
-     margin-top: 3rem;
-     transition: 0.3s ease-in-out;
-     animation: pop 1.5s;
-
-
-     .user__image {
-         width: 30px;
-         border-radius: 50%;
-     }
-
-     .comment__body {
-         border: 1px solid rgba(128, 128, 128, 0.349);
-         border-radius: 5px;
-         padding: 1rem 1.5rem;
-         width: 100%;
-
-         .comment__info {
-             color: rgba(73, 73, 73, 0.671);
-             font-size: 12px;
-             margin-bottom: 1rem;
-         }
-
-         .comment__value {
-             margin-bottom: 1rem;
-         }
-     }
-
- }

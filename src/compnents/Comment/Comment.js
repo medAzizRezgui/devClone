@@ -1,23 +1,28 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import './Comment.scss'
+import CommentContext from '../../context/comment-context'
+import FinalComment from './FinalComment';
 import user from '../../assets/user.jpg'
-import Heart from '../../UI/HeartReact/HeartReact'
 function Comment(props) {
-
+    const { addComment } = useContext(CommentContext);
 
     const [data, setData] = useState('')
-    const [show, setShow] = useState(false)
     const [disc, setDisc] = useState(0)
+
     const inputValue = (e) => {
-        if (!show) {
-            setData(e.currentTarget.value)
-        }
+        setData(e.currentTarget.value)
+
     }
     const DisplayComment = (e) => {
         e.preventDefault();
-        setShow(true)
-        setDisc(disc + 1)
 
+        setDisc(disc + 1)
+        const newComment = {
+            id: Math.random(),
+            text: data,
+        }
+        addComment(newComment)
+        console.log(newComment);
     }
 
     return (
@@ -42,26 +47,7 @@ function Comment(props) {
                     </div>
 
                 </div>
-
-
-
-
-                <div style={{ display: show ? 'block' : 'none' }}>
-
-                    <div className="user__comment" >
-                        <img src={user} alt="" className="user__image" />
-                        <div className="comment__body">
-                            <p className="comment__info">
-                                LUKE知る
-                                •
-                                Aug 10
-                            </p>
-                            <p className='comment__value'>{show ? data : null}</p>
-                            <Heart
-                                hearts={0} />
-                        </div>
-                    </div>
-                </div>
+                <FinalComment />
             </div>
         </div>
     )

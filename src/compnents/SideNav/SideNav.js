@@ -5,7 +5,7 @@ import Aux from 'react-aux';
 import sideNavContext from '../../context/SideNav Context/sidenav-context';
 import { Link } from 'react-router-dom'
 function SideNav() {
-    const { show, setShow } = useContext(sideNavContext)
+    const { setShow } = useContext(sideNavContext)
     return (
         <Aux>
             <div onClick={() => setShow(false)}

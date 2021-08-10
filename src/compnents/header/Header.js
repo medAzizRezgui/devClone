@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import './header.scss';
 import { Link } from 'react-router-dom'
 import logo from '../../assets/dev-black.png';
