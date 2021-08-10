@@ -58,7 +58,7 @@ function Home() {
                     <Post
                         img={User4}
                         time={5}
-                        tags={'#react#javascript#webdev#beginners'}
+                        tags={'#react #javascript #webdev #beginners'}
                         title={'How to Create Public And Private Routes using React Router'}
                         date={'Aug 9 (13 hours ago)'}
                         name={'Nilanth'}

@@ -17,6 +17,7 @@ function Comment(props) {
         e.preventDefault();
         setShow(true)
         setDisc(disc + 1)
+
     }
 
     return (
@@ -41,6 +42,10 @@ function Comment(props) {
                     </div>
 
                 </div>
+
+
+
+
                 <div style={{ display: show ? 'block' : 'none' }}>
 
                     <div className="user__comment" >
