@@ -73,7 +73,7 @@ function Home() {
                         title={'How to Create Public And Private Routes using React Router'}
                         date={'Aug 9 (13 hours ago)'}
                         name={'Nilanth'}
-                        hearts={69}
+                        hearts={9}
                         comments={3}
                     />
                     <Post
