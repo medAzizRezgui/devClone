@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.home__section {
+    margin-top: 70px;
+
+    .home__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .home__title {
+            font-size: $Paragraph-1;
+        }
+
+        .feed__select {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            font-size: $Body;
+            background-color: white;
+
+        }
+    }
+}

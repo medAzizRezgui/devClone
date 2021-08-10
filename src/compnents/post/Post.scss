@@ -1,0 +1,68 @@
+@import '../../styles/variables.scss';
+
+
+
+.post {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+
+    .user__info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: $m-1-5;
+
+        .user__image {
+            width: 45px;
+            border-radius: 50%;
+        }
+
+        .user__data {
+            .user__name {
+                font-weight: $font-Medium;
+                color: $Black;
+
+            }
+
+            .post__date {
+                color: rgba(128, 128, 128, 0.705);
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .post__title {
+        font-size: $Paragraph-2;
+        font-weight: $font-Bold;
+        color: $Black;
+    }
+
+    .tags {
+        color: rgba(128, 128, 128, 0.705);
+        margin-bottom: $m-1;
+        font-weight: $font-Medium;
+        word-spacing: 5px;
+    }
+
+    .post__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .reacts {}
+
+        .read {
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .time {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

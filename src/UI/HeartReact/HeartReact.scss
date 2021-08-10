@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.heart__container {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.heart__icon {
+    color: rgb(146, 146, 146);
+    font-size: 20px !important;
+}

@@ -1,0 +1,84 @@
+@import '../../styles/variables.scss';
+
+.full__post {
+    .post__image {
+        background: url('https://res.cloudinary.com/practicaldev/image/fetch/s--CeUyg5Zh--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3d76lnwq8ehx7loorm3k.png');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 250px;
+        margin-bottom: $m-1;
+    }
+
+    .container {
+        .post__title {
+            font-size: $Paragraph-1 + 0.5rem;
+            text-align: left;
+            margin-bottom: $m-1;
+        }
+
+        .tags {
+            color: rgba(128, 128, 128, 0.705);
+            margin-bottom: $m-1;
+            font-weight: $font-Medium;
+            word-spacing: 5px;
+            margin-bottom: $m-1;
+        }
+
+        .full__post-info {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: $m-2;
+
+            .user__info {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .user__image {
+                    border-radius: 50%;
+                    width: 60px;
+                }
+
+                .user__name {}
+
+
+            }
+
+            .date {
+                color: rgba(128, 128, 128, 0.705);
+
+            }
+        }
+
+        .sub {
+            font-weight: normal;
+            font-size: $Paragraph-2;
+
+            .full__post-link {
+                color: blue;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+
+        .post__gif {
+            margin-bottom: $m-1;
+            margin-top: $m-1;
+        }
+
+        .snippet__image {
+            margin-bottom: $m-1;
+            margin-top: $m-1;
+        }
+
+        .sub__title {
+            font-size: $Paragraph-1;
+            text-align: left;
+            margin-bottom: $m-1;
+            margin-top: $m-1;
+        }
+    }
+}

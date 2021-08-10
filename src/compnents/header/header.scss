@@ -1,0 +1,62 @@
+@import '../../styles/variables.scss';
+
+.header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.425);
+    background-color: white;
+    z-index: 100;
+
+    .container {
+        height: 100%;
+
+
+
+        .nav {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .menu {
+                display: flex;
+                align-items: center;
+
+
+                .menu__icon {
+                    font-size: 32px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+
+                .logo__image {
+                    width: 50px;
+
+                }
+            }
+
+            .cta-items {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 12px;
+
+                .cta__icon {
+                    font-size: 25px;
+                    cursor: pointer;
+                }
+
+                .user__image {
+                    border-radius: 50%;
+                    width: 35px;
+                    cursor: pointer;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
