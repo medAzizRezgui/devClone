@@ -2,8 +2,10 @@ import React from 'react'
 import './FullPost.scss';
 import user1 from '../../assets/user1.jpg';
 import gif from '../../assets/post1gif.gif';
-import code from '../../assets/snippet1.png'
-import code2 from '../../assets/snippet2.png'
+import code from '../../assets/snippet1.png';
+import code2 from '../../assets/snippet2.png';
+import ReactBar from '../../UI/ReactBar/ReactBar';
+import Comment from '../Comment/Comment'
 function FullPost() {
     return (
         <section className="full__post">
@@ -50,17 +52,18 @@ function FullPost() {
                     It makes more sense to get data by making actual HTTP requests rather than just creating a list of items array within the component.
                     <br /><br />
                     As an example of the Observer pattern, we will go about implementing a simple interaction where multiple elements listen to the mouse position on the screen and perform different actions.
+                    <br />
+                    <br />
+                    If you want to learn more about the JavaScript debugger in VS Code, you can check the documentation here or talk to Connor Peet on Twitter. For the Edge DevTools for VS Code integration you can read the extension documentation and check the code on GitHub. We're also welcoming filing any issues on GitHub and you can talk to me, codepo8 on Twitter or the team at EdgeDevTools
                 </p>
-
-
                 <img src={code2} alt="" className='snippet__image' />
             </div>
 
 
 
+            <Comment />
 
-
-
+            <ReactBar></ReactBar>
         </section >
     )
 }

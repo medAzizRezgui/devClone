@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.bookmark__container {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bookmark__icon {
+    color: rgb(146, 146, 146);
+    font-size: 24px !important;
+}

@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.fire__container {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.fire__icon {
+    color: #f14c00;
+    font-size: 24px !important;
+    border: 2px solid #f14c00;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0.3rem;
+}

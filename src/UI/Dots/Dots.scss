@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.dots__container {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dots__icon {
+    color: rgb(146, 146, 146);
+    font-size: 24px !important;
+}

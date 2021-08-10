@@ -1,6 +1,9 @@
 @import '../../styles/variables.scss';
 
 .full__post {
+    background-color: white;
+    padding: 0 1rem;
+
     .post__image {
         background: url('https://res.cloudinary.com/practicaldev/image/fetch/s--CeUyg5Zh--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3d76lnwq8ehx7loorm3k.png');
         background-size: cover;
@@ -8,6 +11,7 @@
         width: 100%;
         height: 250px;
         margin-bottom: $m-1;
+
     }
 
     .container {
@@ -23,13 +27,14 @@
             font-weight: $font-Medium;
             word-spacing: 5px;
             margin-bottom: $m-1;
+            font-weight: 300;
         }
 
         .full__post-info {
             display: flex;
             align-items: center;
             gap: 40px;
-            margin-bottom: $m-2;
+            margin-bottom: $m-3;
 
             .user__info {
                 display: flex;
@@ -38,7 +43,7 @@
 
                 .user__image {
                     border-radius: 50%;
-                    width: 60px;
+                    width: 45px;
                 }
 
                 .user__name {}
@@ -54,7 +59,7 @@
 
         .sub {
             font-weight: normal;
-            font-size: $Paragraph-2;
+            font-size: 1.6rem;
 
             .full__post-link {
                 color: blue;
