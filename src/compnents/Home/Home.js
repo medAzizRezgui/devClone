@@ -5,7 +5,8 @@ import User1 from '../../assets/user1.jpg'
 import User2 from '../../assets/user2.jpg'
 import User3 from '../../assets/user3.jpg'
 import User4 from '../../assets/user4.jpg'
-
+import User5 from '../../assets/user5.jpg'
+import User6 from '../../assets/user6.jpg'
 function Home() {
 
 
@@ -16,11 +17,11 @@ function Home() {
                 <div className="home__heading">
                     <h3 className="home__title">Posts</h3>
                     <select className={'feed__select'}>
-                        <option value="volvo">Feed</option>
-                        <option value="saab">Week</option>
-                        <option value="opel">Month</option>
-                        <option value="audi">Year</option>
-                        <option value="audi">Latest</option>
+                        <option >Feed</option>
+                        <option >Week</option>
+                        <option >Month</option>
+                        <option >Year</option>
+                        <option >Latest</option>
                     </select>
                 </div>
                 <div className="feed">
@@ -64,6 +65,26 @@ function Home() {
                         name={'Nilanth'}
                         hearts={69}
                         comments={3}
+                    />
+                    <Post
+                        img={User5}
+                        time={5}
+                        tags={'#react #javascript #webdev #beginners'}
+                        title={'How to Create Public And Private Routes using React Router'}
+                        date={'Aug 9 (13 hours ago)'}
+                        name={'Nilanth'}
+                        hearts={69}
+                        comments={3}
+                    />
+                    <Post
+                        img={User6}
+                        time={8}
+                        tags={'  #javascript #react #redux #webdev  '}
+                        title={'Understand One-way Data Binding in React the easy way!  '}
+                        date={'Aug 10 (6 hours ago)'}
+                        name={'Parnika-Gupta'}
+                        hearts={10}
+                        comments={2}
                     />
                 </div>
             </div>
