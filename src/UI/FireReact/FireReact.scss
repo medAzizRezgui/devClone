@@ -7,11 +7,15 @@
 }
 
 .fire__icon {
+    color: rgb(146, 146, 146);
+    font-size: 28px !important;
+
+
+}
+
+.fire__icon-active {
     color: #f14c00;
-    font-size: 24px !important;
-    border: 2px solid #f14c00;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    padding: 0.3rem;
+    animation: up 0.5s;
+    transition: 0.3s ease-in-out;
+
 }

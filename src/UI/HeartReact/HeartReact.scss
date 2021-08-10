@@ -8,5 +8,26 @@
 
 .heart__icon {
     color: rgb(146, 146, 146);
-    font-size: 24px !important;
+    font-size: 28px !important;
+}
+
+.heart__icon-active {
+    color: #ff0000;
+    animation: up 0.5s;
+    transition: 0.3s ease-in-out;
+}
+
+@keyframes up {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

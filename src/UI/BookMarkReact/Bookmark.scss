@@ -8,5 +8,12 @@
 
 .bookmark__icon {
     color: rgb(146, 146, 146);
-    font-size: 24px !important;
+    font-size: 28px !important;
+}
+
+.bookmark__icon-active {
+    color: #00ffc8;
+    animation: up 0.5s;
+    transition: 0.3s ease-in-out;
+
 }

@@ -3,6 +3,7 @@ import './SideNav.scss'
 import ClearIcon from '@material-ui/icons/Clear';
 import Aux from 'react-aux';
 import sideNavContext from '../../context/SideNav Context/sidenav-context';
+import { Link } from 'react-router-dom'
 function SideNav() {
     const { show, setShow } = useContext(sideNavContext)
     return (
@@ -18,10 +19,13 @@ function SideNav() {
                         className={'close__icon  '}></ClearIcon>
                 </div>
                 <ul className="nav__list">
-                    <li>
-                        <img src="https://image.flaticon.com/icons/png/512/619/619032.png" alt="" className={'nav__icon'} />
-                        <p className={'nav__text'}>Home</p>
-                    </li>
+                    <Link to='/'>
+
+                        <li onClick={() => setShow(false)} >
+                            <img src="https://image.flaticon.com/icons/png/512/619/619032.png" alt="" className={'nav__icon'} />
+                            <p className={'nav__text'}>Home</p>
+                        </li>
+                    </Link>
                     <li>
                         <img src="https://image.flaticon.com/icons/png/512/3532/3532127.png" alt="" className={'nav__icon'} />
                         <p className={'nav__text'}>Reading List</p>

@@ -8,9 +8,9 @@ function ReactBar() {
     return (
         <div className={'react__bar'}>
             <div className="container react__bar__container">
-                <Heart hearts={'44'} />
-                <FireReact fire={'8'} />
-                <Bookmark bookmarks={'4'} />
+                <Heart hearts={44} />
+                <FireReact fire={8} />
+                <Bookmark bookmarks={4} />
                 <Dots />
             </div>
 
